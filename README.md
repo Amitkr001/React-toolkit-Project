@@ -1,8 +1,6 @@
 
-```markdown
-# User Management with React and Redux Toolkit
-
 This project is a simple user management application built with React and Redux Toolkit. It allows users to add new users, delete individual users, and delete all users.
+```markdown
 
 ## Table of Contents
 
