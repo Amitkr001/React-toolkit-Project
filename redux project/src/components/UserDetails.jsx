@@ -3,12 +3,16 @@ import { DeleteAllUser } from "./DeleteAllUser";
 import styled from "styled-components";
 
 const UserDetails = () => {
+
+  const addNewUser = () => {
+    console.log("add new user");
+  };
   return (
     <Wrapper>
       <div className="content">
         <div className="admin-table">
           <div className="admin-subtitle">List of User Details</div>
-          <button className="btn add-btn">Add New Users</button>
+          <button className="btn add-btn" onClick={() => addNewUser()}>Add New Users</button>
         </div>
         <ul>
           {/* <li>Hi</li>
