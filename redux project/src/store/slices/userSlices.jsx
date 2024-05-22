@@ -9,16 +9,17 @@ const userSlice = createSlice({
     initialState,
     reducers: {
         addUser: (state, action) => {
-            // Logic to add a user (example: state.push(action.payload))
+            state.push(action.payload);
         },
         removeUser: (state, action) => {
             // Logic to remove a user (example: state = state.filter(user => user.id !== action.payload.id))
         },
         removeAllUser: (state, action) => {
             // Logic to remove all users (example: return [])
-            
+            return [];
         }
     }
 });
 
+export const { addUser, removeUser, removeAllUser } = userSlice.actions;
 export default userSlice.reducer;
