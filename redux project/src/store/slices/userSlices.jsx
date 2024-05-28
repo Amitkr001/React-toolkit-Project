@@ -12,7 +12,7 @@ const userSlice = createSlice({
             state.push(action.payload);
         },
         removeUser: (state, action) => {
-            // Logic to remove a user (example: state = state.filter(user => user.id !== action.payload.id))
+            state.splice(action.payload,1);
         },
         removeAllUser: (state, action) => {
             // Logic to remove all users (example: return [])
